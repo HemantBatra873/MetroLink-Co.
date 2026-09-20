@@ -1,0 +1,22 @@
+{
+  "component": {
+    "form": {
+      "input": {
+        "height": { "$value": "2.5rem" },
+        "padding-x": { "$value": "{spacing.3}" },
+        "padding-y": { "$value": "{spacing.2}" },
+        "background": { "$value": "{semantic.color.background.surface}" },
+        "border": { "$value": "{semantic.color.border.default}" },
+        "border-focus": { "$value": "{semantic.color.border.focus}" },
+        "radius": { "$value": "{radius.md}" },
+        "text": { "$value": "{semantic.color.text.primary}" },
+        "placeholder": { "$value": "{semantic.color.text.tertiary}" }
+      },
+      "label": {
+        "font-size": { "$value": "{font.size.sm}" },
+        "font-weight": { "$value": "{font.weight.semibold}" },
+        "text": { "$value": "{semantic.color.text.primary}" }
+      }
+    }
+  }
+}

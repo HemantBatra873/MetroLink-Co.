@@ -1,0 +1,22 @@
+{
+  "semantic": {
+    "elevation": {
+      "flat": {
+        "shadow": { "$value": "{shadow.none}" },
+        "z-index": { "$value": "{z-index.default}" }
+      },
+      "raised": {
+        "shadow": { "$value": "{shadow.xs}" },
+        "z-index": { "$value": "{z-index.default}" }
+      },
+      "floating": {
+        "shadow": { "$value": "{shadow.md}" },
+        "z-index": { "$value": "{z-index.dropdown}" }
+      },
+      "overlay": {
+        "shadow": { "$value": "{shadow.xl}" },
+        "z-index": { "$value": "{z-index.modal}" }
+      }
+    }
+  }
+}

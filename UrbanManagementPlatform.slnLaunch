@@ -1,0 +1,27 @@
+[
+  {
+    "Name": "Platform APIs",
+    "Projects": [
+      {
+        "Name": "IdentityPlatform.Service",
+        "Path": "src\\Identity\\PersonaCore.Identity\\src\\IdentityPlatform.Service\\IdentityPlatform.Service.csproj",
+        "Action": "Start"
+      },
+      {
+        "Name": "Enforcement.Api",
+        "Path": "src\\Enforcement\\EnforceCore.Enforcement\\src\\Enforcement.Api\\Enforcement.Api.csproj",
+        "Action": "Start"
+      },
+      {
+        "Name": "Parking.Api",
+        "Path": "src\\Parking\\ParkCore.Parking\\src\\Parking.Api\\Parking.Api.csproj",
+        "Action": "Start"
+      },
+      {
+        "Name": "Payment.Api",
+        "Path": "src\\Payment\\CashCore.Payment\\src\\Payment.Api\\Payment.Api.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

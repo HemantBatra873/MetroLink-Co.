@@ -1,0 +1,13 @@
+{
+  "component": {
+    "tooltip": {
+      "background": { "$value": "{semantic.color.text.primary}" },
+      "text": { "$value": "{semantic.color.text.inverse}" },
+      "radius": { "$value": "{radius.sm}" },
+      "padding-x": { "$value": "{spacing.2}" },
+      "padding-y": { "$value": "{spacing.1}" },
+      "font-size": { "$value": "{font.size.xs}" },
+      "z-index": { "$value": "{z-index.tooltip}" }
+    }
+  }
+}

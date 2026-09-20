@@ -1,0 +1,56 @@
+## .NET
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+.vs/
+*.DotSettings.user
+project.lock.json
+artifacts/
+
+## Secrets / local env
+.env
+**/.env
+!**/.env.example
+appsettings.*.local.json
+**/secrets.json
+
+## Node
+node_modules/
+dist/
+build/
+.turbo/
+*.tsbuildinfo
+npm-debug.log*
+pnpm-debug.log*
+yarn-error.log*
+
+## IDE / OS
+.idea/
+*.swp
+*~
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+## Test / coverage
+TestResults/
+coverage/
+*.trx
+*.coverage
+*.coveragexml
+
+## Docker / local data
+*.log
+
+## EF / tooling
+**/Migrations/*.Designer.cs.bak
+
+## Python / misc
+__pycache__/
+*.pyc
+
+infrastructure/.env
+

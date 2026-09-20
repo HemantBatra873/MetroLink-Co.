@@ -1,0 +1,3 @@
+# Enterprise component library
+
+Import components from `@enterprise/component-library` and the stylesheet once with `@enterprise/component-library/styles.css`. This is a shadcn-based library: the official CLI generates owned base source in `src/components/ui/` (currently Button, Card, and Dialog), and Enterprise components in `src/components/` wrap or re-export those bases. For example, `components/button.tsx` imports shadcn's generated `components/ui/button.tsx`, then applies Enterprise variants, loading behavior, full width, and design-token semantics. Add further bases with `pnpm dlx shadcn@latest add <component>` from this package; review then customize the Enterprise wrapper rather than editing an app.

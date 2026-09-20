@@ -1,0 +1,10 @@
+{
+  "semantic": {
+    "state": {
+      "hover-opacity": { "$value": "{opacity.90}" },
+      "active-opacity": { "$value": "{opacity.80}" },
+      "disabled-opacity": { "$value": "{opacity.50}" },
+      "focus-ring-width": { "$value": "{border.width.2}" }
+    }
+  }
+}

@@ -1,0 +1,6 @@
+@Enforcement.Api_HostAddress = http://localhost:5208
+
+GET {{Enforcement.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

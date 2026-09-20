@@ -1,0 +1,10 @@
+{
+  "semantic": {
+    "layout": {
+      "page-padding": { "$value": "{spacing.6}" },
+      "section-gap": { "$value": "{spacing.8}" },
+      "card-padding": { "$value": "{spacing.4}" },
+      "container-max-width": { "$value": "1280px" }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "border": {
+    "width": {
+      "0": { "$value": "0px" },
+      "1": { "$value": "1px" },
+      "2": { "$value": "2px" },
+      "4": { "$value": "4px" },
+      "8": { "$value": "8px" }
+    },
+    "style": {
+      "solid": { "$value": "solid" },
+      "dashed": { "$value": "dashed" },
+      "dotted": { "$value": "dotted" },
+      "double": { "$value": "double" },
+      "none": { "$value": "none" }
+    }
+  }
+}

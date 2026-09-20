@@ -1,0 +1,11 @@
+{
+  "component": {
+    "alert": {
+      "radius": { "$value": "{radius.md}" },
+      "border-width": { "$value": "{border.width.4}" },
+      "padding-x": { "$value": "{spacing.4}" },
+      "padding-y": { "$value": "{spacing.3}" },
+      "gap": { "$value": "{spacing.1}" }
+    }
+  }
+}

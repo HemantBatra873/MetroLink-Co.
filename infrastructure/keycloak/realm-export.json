@@ -1,0 +1,55 @@
+{
+  "realm": "platform-identity-realm",
+  "enabled": true,
+  "registrationAllowed": true,
+  "sslRequired": "none",
+  "clients": [
+    {
+      "clientId": "business-api-client",
+      "enabled": true,
+      "publicClient": true,
+      "directAccessGrantsEnabled": true,
+      "standardFlowEnabled": true,
+      "redirectUris": [
+        "*"
+      ],
+      "webOrigins": [
+        "*"
+      ]
+    }
+  ],
+  "users": [
+    {
+      "id": "3fa85f64-5717-4562-b3fc-2c963f66afa1",
+      "username": "raj",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Raj",
+      "lastName": "Kumar",
+      "email": "raj@municipalitya.gov",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "password123",
+          "temporary": false
+        }
+      ]
+    },
+    {
+      "id": "3fa85f64-5717-4562-b3fc-2c963f66afa2",
+      "username": "amit",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Amit",
+      "lastName": "Singh",
+      "email": "amit@municipalitya.gov",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "password123",
+          "temporary": false
+        }
+      ]
+    }
+  ]
+}

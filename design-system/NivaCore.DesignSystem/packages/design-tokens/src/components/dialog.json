@@ -1,0 +1,14 @@
+{
+  "component": {
+    "dialog": {
+      "backdrop-bg": { "$value": "{semantic.color.background.overlay}" },
+      "background": { "$value": "{semantic.color.background.surface}" },
+      "border": { "$value": "{semantic.color.border.default}" },
+      "radius": { "$value": "{radius.lg}" },
+      "padding": { "$value": "{spacing.4}" },
+      "max-width": { "$value": "32rem" },
+      "shadow": { "$value": "{shadow.xl}" },
+      "z-index": { "$value": "{z-index.modal}" }
+    }
+  }
+}

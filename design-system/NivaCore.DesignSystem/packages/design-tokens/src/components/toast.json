@@ -1,0 +1,13 @@
+{
+  "component": {
+    "toast": {
+      "background": { "$value": "{semantic.color.background.surface}" },
+      "border": { "$value": "{semantic.color.border.default}" },
+      "border-accent": { "$value": "{semantic.color.action.primary}" },
+      "radius": { "$value": "{radius.md}" },
+      "padding": { "$value": "{spacing.3}" },
+      "shadow": { "$value": "{shadow.lg}" },
+      "z-index": { "$value": "{z-index.toast}" }
+    }
+  }
+}

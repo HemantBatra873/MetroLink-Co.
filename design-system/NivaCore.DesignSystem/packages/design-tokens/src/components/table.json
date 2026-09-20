@@ -1,0 +1,11 @@
+{
+  "component": {
+    "table": {
+      "header-bg": { "$value": "{semantic.color.background.muted}" },
+      "header-text": { "$value": "{semantic.color.text.secondary}" },
+      "cell-padding": { "$value": "{spacing.3}" },
+      "border": { "$value": "{semantic.color.border.default}" },
+      "row-hover-bg": { "$value": "{semantic.color.background.muted}" }
+    }
+  }
+}

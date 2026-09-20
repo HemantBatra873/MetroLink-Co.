@@ -1,0 +1,28 @@
+{
+  "name": "light",
+  "selector": ":root, [data-theme=\"light\"]",
+  "overrides": {
+    "semantic": {
+      "color": {
+        "background": {
+          "default": { "$value": "{color.slate.50}" },
+          "surface": { "$value": "{color.common.white}" },
+          "muted": { "$value": "{color.slate.100}" }
+        },
+        "text": {
+          "primary": { "$value": "{color.slate.900}" },
+          "secondary": { "$value": "{color.slate.500}" },
+          "inverse": { "$value": "{color.common.white}" }
+        },
+        "border": {
+          "default": { "$value": "{color.slate.200}" },
+          "strong": { "$value": "{color.slate.500}" }
+        },
+        "action": {
+          "primary": { "$value": "{color.blue.500}" },
+          "primary-hover": { "$value": "{color.blue.600}" }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "component": {
+    "navigation": {
+      "sidebar-width": { "$value": "16rem" },
+      "header-height": { "$value": "3.5rem" },
+      "item-radius": { "$value": "{radius.md}" },
+      "item-padding": { "$value": "{spacing.2}" },
+      "active-bg": { "$value": "{semantic.color.background.muted}" },
+      "active-text": { "$value": "{semantic.color.action.primary}" }
+    }
+  }
+}

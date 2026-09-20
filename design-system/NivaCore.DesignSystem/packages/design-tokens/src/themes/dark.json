@@ -1,0 +1,37 @@
+{
+  "name": "dark",
+  "selector": "[data-theme=\"dark\"]",
+  "overrides": {
+    "semantic": {
+      "color": {
+        "background": {
+          "default": { "$value": "{color.slate.950}" },
+          "surface": { "$value": "{color.slate.900}" },
+          "muted": { "$value": "{color.slate.800}" },
+          "subtle": { "$value": "{color.slate.800}" },
+          "canvas": { "$value": "{color.slate.950}" },
+          "overlay": { "$value": "rgba(0, 0, 0, 0.75)" }
+        },
+        "text": {
+          "primary": { "$value": "{color.slate.50}" },
+          "secondary": { "$value": "{color.slate.400}" },
+          "tertiary": { "$value": "{color.slate.500}" },
+          "muted": { "$value": "{color.slate.400}" },
+          "inverse": { "$value": "{color.slate.900}" }
+        },
+        "border": {
+          "default": { "$value": "{color.slate.800}" },
+          "subtle": { "$value": "{color.slate.800}" },
+          "strong": { "$value": "{color.slate.600}" },
+          "focus": { "$value": "{color.blue.400}" }
+        },
+        "action": {
+          "primary": { "$value": "{color.blue.600}" },
+          "primary-hover": { "$value": "{color.blue.500}" },
+          "secondary": { "$value": "{color.slate.800}" },
+          "secondary-hover": { "$value": "{color.slate.700}" }
+        }
+      }
+    }
+  }
+}

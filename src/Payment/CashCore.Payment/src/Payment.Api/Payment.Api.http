@@ -1,0 +1,28 @@
+@Payment.Api_HostAddress = http://localhost:5210
+
+### Initiate payment
+POST {{Payment.Api_HostAddress}}/api/v1/payments/initiate
+Content-Type: application/json
+X-Test-User-Sub: test-user-001
+X-Test-User-Roles: PaymentAdmin
+
+{
+  "organizationId": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+  "sourceSystem": "Enforcement",
+  "payableReferenceId": "00000000-0000-0000-0000-000000000001",
+  "correlationId": "00000000-0000-0000-0000-000000000002",
+  "amount": 500,
+  "currency": "INR",
+  "idempotencyKey": "demo-key-1",
+  "provider": "Mock"
+}
+
+### List payments (admin)
+GET {{Payment.Api_HostAddress}}/api/v1/payments
+X-Test-User-Sub: test-user-001
+X-Test-User-Roles: PaymentAdmin
+
+### Stats
+GET {{Payment.Api_HostAddress}}/api/v1/payments/stats
+X-Test-User-Sub: test-user-001
+X-Test-User-Roles: PaymentAdmin

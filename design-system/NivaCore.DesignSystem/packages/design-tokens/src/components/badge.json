@@ -1,0 +1,33 @@
+{
+  "component": {
+    "badge": {
+      "radius": { "$value": "{radius.full}" },
+      "font-size": { "$value": "{font.size.xs}" },
+      "font-weight": { "$value": "{font.weight.bold}" },
+      "padding-x": { "$value": "{spacing.2}" },
+      "padding-y": { "$value": "0.2rem" },
+      "variant": {
+        "neutral": {
+          "background": { "$value": "{semantic.color.background.muted}" },
+          "text": { "$value": "{semantic.color.text.primary}" }
+        },
+        "success": {
+          "background": { "$value": "rgba(22, 163, 74, 0.15)" },
+          "text": { "$value": "{semantic.color.action.success}" }
+        },
+        "warning": {
+          "background": { "$value": "rgba(217, 119, 6, 0.15)" },
+          "text": { "$value": "{semantic.color.action.warning}" }
+        },
+        "error": {
+          "background": { "$value": "rgba(220, 38, 38, 0.12)" },
+          "text": { "$value": "{semantic.color.action.danger}" }
+        },
+        "info": {
+          "background": { "$value": "rgba(37, 99, 235, 0.12)" },
+          "text": { "$value": "{semantic.color.action.primary}" }
+        }
+      }
+    }
+  }
+}

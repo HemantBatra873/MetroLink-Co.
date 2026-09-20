@@ -1,0 +1,43 @@
+{
+  "component": {
+    "button": {
+      "radius": { "$value": "{radius.md}" },
+      "font-family": { "$value": "{font.family.sans}" },
+      "font-weight": { "$value": "{font.weight.semibold}" },
+      "size": {
+        "sm": {
+          "height": { "$value": "2rem" },
+          "padding-x": { "$value": "{spacing.3}" },
+          "font-size": { "$value": "{font.size.xs}" }
+        },
+        "md": {
+          "height": { "$value": "2.5rem" },
+          "padding-x": { "$value": "{spacing.4}" },
+          "font-size": { "$value": "{font.size.sm}" }
+        },
+        "lg": {
+          "height": { "$value": "3rem" },
+          "padding-x": { "$value": "{spacing.5}" },
+          "font-size": { "$value": "{font.size.md}" }
+        }
+      },
+      "variant": {
+        "primary": {
+          "background": { "$value": "{semantic.color.action.primary}" },
+          "background-hover": { "$value": "{semantic.color.action.primary-hover}" },
+          "text": { "$value": "{semantic.color.text.inverse}" }
+        },
+        "secondary": {
+          "background": { "$value": "{semantic.color.background.surface}" },
+          "border": { "$value": "{semantic.color.border.default}" },
+          "text": { "$value": "{semantic.color.text.primary}" }
+        },
+        "danger": {
+          "background": { "$value": "{semantic.color.action.danger}" },
+          "background-hover": { "$value": "{semantic.color.action.danger-hover}" },
+          "text": { "$value": "{semantic.color.text.inverse}" }
+        }
+      }
+    }
+  }
+}

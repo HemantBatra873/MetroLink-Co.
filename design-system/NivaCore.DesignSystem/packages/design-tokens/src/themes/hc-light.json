@@ -1,0 +1,28 @@
+{
+  "name": "hc-light",
+  "selector": "[data-theme=\"hc-light\"]",
+  "overrides": {
+    "semantic": {
+      "color": {
+        "background": {
+          "default": { "$value": "{color.common.white}" },
+          "surface": { "$value": "{color.common.white}" },
+          "muted": { "$value": "{color.slate.200}" }
+        },
+        "text": {
+          "primary": { "$value": "{color.common.black}" },
+          "secondary": { "$value": "{color.slate.900}" },
+          "inverse": { "$value": "{color.common.white}" }
+        },
+        "border": {
+          "default": { "$value": "{color.common.black}" },
+          "strong": { "$value": "{color.common.black}" }
+        },
+        "action": {
+          "primary": { "$value": "#000000" },
+          "primary-hover": { "$value": "#1f2937" }
+        }
+      }
+    }
+  }
+}
