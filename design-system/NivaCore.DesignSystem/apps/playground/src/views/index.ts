@@ -1,8 +1,9 @@
 export { ButtonView } from './ButtonView.js';
-export { InputView as FormControlsView } from './FormControlsView.js';
+export { FormControlsView } from './FormControlsView.js';
 export { DataDisplayView } from './DataDisplayView.js';
 export { OverlaysView } from './OverlaysView.js';
 export { NavigationView } from './NavigationView.js';
 export { MessagingView } from './MessagingView.js';
 export { LayoutView } from './LayoutView.js';
 export { TokensView } from './TokensView.js';
+export { ExtraComponentsView } from './ExtraComponentsView.js';

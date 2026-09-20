@@ -7,20 +7,31 @@
         "background": {
           "default": { "$value": "{color.common.black}" },
           "surface": { "$value": "{color.common.black}" },
-          "muted": { "$value": "{color.slate.900}" }
+          "muted": { "$value": "{color.slate.900}" },
+          "subtle": { "$value": "{color.slate.900}" },
+          "canvas": { "$value": "{color.common.black}" }
         },
         "text": {
           "primary": { "$value": "{color.common.white}" },
           "secondary": { "$value": "{color.slate.100}" },
-          "inverse": { "$value": "{color.common.black}" }
+          "tertiary": { "$value": "{color.slate.200}" },
+          "muted": { "$value": "{color.slate.200}" },
+          "inverse": { "$value": "{color.common.white}" }
         },
         "border": {
           "default": { "$value": "{color.common.white}" },
-          "strong": { "$value": "{color.common.white}" }
+          "strong": { "$value": "{color.common.white}" },
+          "focus": { "$value": "{color.common.white}" }
         },
         "action": {
           "primary": { "$value": "#ffffff" },
-          "primary-hover": { "$value": "#e5e7eb" }
+          "primary-hover": { "$value": "#e5e7eb" },
+          "primary-foreground": { "$value": "{color.common.black}" },
+          "secondary": { "$value": "{color.slate.800}" },
+          "secondary-hover": { "$value": "{color.slate.700}" },
+          "secondary-foreground": { "$value": "{color.common.white}" },
+          "danger": { "$value": "{color.red.400}" },
+          "danger-foreground": { "$value": "{color.common.black}" }
         }
       }
     }

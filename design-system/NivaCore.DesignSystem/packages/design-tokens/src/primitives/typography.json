@@ -1,10 +1,17 @@
 {
   "font": {
     "family": {
-      "sans": { "$value": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" },
+      "sans": { "$value": "'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" },
+      "sans-alt": { "$value": "'IBM Plex Sans', 'Segoe UI', ui-sans-serif, system-ui, sans-serif" },
+      "display": { "$value": "'Plus Jakarta Sans', 'Inter', ui-sans-serif, system-ui, sans-serif" },
       "serif": { "$value": "Georgia, Cambria, 'Times New Roman', Times, serif" },
-      "mono": { "$value": "ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace" },
+      "mono": { "$value": "'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace" },
       "default": { "$value": "{font.family.sans}" }
+    },
+    "stack": {
+      "inter": { "$value": "'Inter', ui-sans-serif, system-ui, sans-serif" },
+      "ibm-plex": { "$value": "'IBM Plex Sans', 'Segoe UI', ui-sans-serif, system-ui, sans-serif" },
+      "plus-jakarta": { "$value": "'Plus Jakarta Sans', 'Inter', ui-sans-serif, system-ui, sans-serif" }
     },
     "size": {
       "2xs": { "$value": "0.625rem" },

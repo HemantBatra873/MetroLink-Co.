@@ -1,0 +1,28 @@
+{
+  "gradient": {
+    "brand": {
+      "$value": "linear-gradient(135deg, {color.blue.500} 0%, {color.indigo.500} 100%)"
+    },
+    "brand-soft": {
+      "$value": "linear-gradient(135deg, {color.blue.50} 0%, {color.indigo.100} 100%)"
+    },
+    "ocean": {
+      "$value": "linear-gradient(135deg, {color.blue.600} 0%, {color.blue.400} 50%, {color.emerald.400} 100%)"
+    },
+    "sunset": {
+      "$value": "linear-gradient(135deg, {color.amber.500} 0%, {color.red.500} 50%, {color.violet.600} 100%)"
+    },
+    "aurora": {
+      "$value": "linear-gradient(120deg, {color.emerald.400} 0%, {color.blue.500} 50%, {color.violet.500} 100%)"
+    },
+    "slate": {
+      "$value": "linear-gradient(180deg, {color.slate.100} 0%, {color.slate.200} 100%)"
+    },
+    "midnight": {
+      "$value": "linear-gradient(135deg, {color.slate.900} 0%, {color.blue.900} 50%, {color.slate.950} 100%)"
+    },
+    "mesh": {
+      "$value": "radial-gradient(at 20% 20%, {color.blue.200} 0%, transparent 50%), radial-gradient(at 80% 0%, {color.indigo.200} 0%, transparent 40%), radial-gradient(at 50% 80%, {color.emerald.100} 0%, transparent 45%), {color.slate.50}"
+    }
+  }
+}

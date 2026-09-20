@@ -14,23 +14,39 @@
         },
         "text": {
           "primary": { "$value": "{color.slate.50}" },
-          "secondary": { "$value": "{color.slate.400}" },
-          "tertiary": { "$value": "{color.slate.500}" },
+          "secondary": { "$value": "{color.slate.300}" },
+          "tertiary": { "$value": "{color.slate.400}" },
           "muted": { "$value": "{color.slate.400}" },
-          "inverse": { "$value": "{color.slate.900}" }
+          "inverse": { "$value": "{color.common.white}" }
         },
         "border": {
-          "default": { "$value": "{color.slate.800}" },
+          "default": { "$value": "{color.slate.700}" },
           "subtle": { "$value": "{color.slate.800}" },
-          "strong": { "$value": "{color.slate.600}" },
+          "strong": { "$value": "{color.slate.500}" },
           "focus": { "$value": "{color.blue.400}" }
         },
         "action": {
-          "primary": { "$value": "{color.blue.600}" },
-          "primary-hover": { "$value": "{color.blue.500}" },
-          "secondary": { "$value": "{color.slate.800}" },
-          "secondary-hover": { "$value": "{color.slate.700}" }
+          "primary": { "$value": "{color.blue.500}" },
+          "primary-hover": { "$value": "{color.blue.400}" },
+          "primary-foreground": { "$value": "{color.common.white}" },
+          "secondary": { "$value": "{color.slate.700}" },
+          "secondary-hover": { "$value": "{color.slate.600}" },
+          "secondary-foreground": { "$value": "{color.slate.50}" },
+          "danger": { "$value": "{color.red.500}" },
+          "danger-hover": { "$value": "{color.red.400}" },
+          "danger-foreground": { "$value": "{color.common.white}" }
         }
+      }
+    },
+    "gradient": {
+      "brand-soft": {
+        "$value": "linear-gradient(135deg, {color.slate.800} 0%, {color.blue.900} 100%)"
+      },
+      "slate": {
+        "$value": "linear-gradient(180deg, {color.slate.800} 0%, {color.slate.900} 100%)"
+      },
+      "mesh": {
+        "$value": "radial-gradient(at 20% 20%, {color.blue.900} 0%, transparent 50%), radial-gradient(at 80% 0%, {color.indigo.900} 0%, transparent 40%), radial-gradient(at 50% 80%, {color.slate.800} 0%, transparent 45%), {color.slate.950}"
       }
     }
   }

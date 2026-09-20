@@ -14,20 +14,26 @@
   --popover:            var(--semantic-color-background-surface);
   --popover-foreground: var(--semantic-color-text-primary);
   --primary:            var(--semantic-color-action-primary);
-  --primary-foreground: var(--semantic-color-text-inverse);
+  --primary-foreground: var(--semantic-color-action-primary-foreground);
   --secondary:          var(--semantic-color-action-secondary);
-  --secondary-foreground: var(--semantic-color-text-primary);
+  --secondary-foreground: var(--semantic-color-action-secondary-foreground);
   --muted:              var(--semantic-color-background-muted);
   --muted-foreground:   var(--semantic-color-text-muted);
   --accent:             var(--semantic-color-background-subtle);
   --accent-foreground:  var(--semantic-color-text-primary);
   --destructive:        var(--semantic-color-action-danger);
-  --destructive-foreground: var(--semantic-color-text-inverse);
+  --destructive-foreground: var(--semantic-color-action-danger-foreground);
   --border:             var(--semantic-color-border-default);
   --input:              var(--semantic-color-border-default);
   --ring:               var(--semantic-color-border-focus);
   --font-sans:          var(--font-family-sans);
   --font-mono:          var(--font-family-mono);
+  --font-display:       var(--font-family-display);
+  color-scheme: light;
+}
+[data-theme="dark"],
+[data-theme="hc-dark"] {
+  color-scheme: dark;
 }
 
 /* ────────────────────────────────────────────
@@ -52,6 +58,7 @@ body {
   height: 100dvh;
   width: 100dvw;
   overflow: hidden;
+  position: relative;
 }
 
 /* ────────────────────────────────────────────
@@ -340,7 +347,7 @@ body {
   flex: 1;
   overflow: auto;
   padding: 1.5rem;
-  background: color-mix(in oklch, var(--muted) 50%, var(--background));
+  background: var(--semantic-color-background-canvas, var(--muted));
 }
 .view-canvas-wrap.bg-grid {
   background-image: radial-gradient(circle, var(--border) 1px, transparent 1px);
@@ -661,6 +668,64 @@ body {
 
 /* Full-width layout demo */
 .full-w { width: 100%; }
+
+/* Brand color override panel */
+.brand-panel {
+  position: absolute;
+  top: 48px;
+  right: 1rem;
+  z-index: 40;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  background: var(--card);
+  color: var(--foreground);
+  box-shadow: 0 8px 24px color-mix(in srgb, var(--foreground) 12%, transparent);
+}
+.brand-panel-field {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--foreground);
+}
+.brand-panel-field input[type="color"] {
+  width: 1.75rem;
+  height: 1.75rem;
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: 0.25rem;
+  background: var(--background);
+  cursor: pointer;
+}
+.brand-panel-field code {
+  font-size: 0.65rem;
+  color: var(--muted-foreground);
+  font-family: var(--font-mono, monospace);
+}
+.brand-panel-reset {
+  padding: 0.3rem 0.65rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  border-radius: 0.375rem;
+  border: 1px solid var(--border);
+  background: var(--muted);
+  color: var(--foreground);
+  cursor: pointer;
+}
+.brand-panel-reset:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+.brand-panel-hint {
+  font-size: 0.65rem;
+  color: var(--muted-foreground);
+}
 
 /* Responsive below 700px */
 @media (max-width: 700px) {

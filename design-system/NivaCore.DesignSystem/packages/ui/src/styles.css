@@ -3,8 +3,83 @@
 @import "shadcn/tailwind.css";
 @source "./";
 @import "@enterprise/design-tokens/css";
-@theme inline { --color-background: var(--background); --color-foreground: var(--foreground); --color-card: var(--card); --color-card-foreground: var(--card-foreground); --color-popover: var(--popover); --color-popover-foreground: var(--popover-foreground); --color-primary: var(--primary); --color-primary-foreground: var(--primary-foreground); --color-secondary: var(--secondary); --color-secondary-foreground: var(--secondary-foreground); --color-muted: var(--muted); --color-muted-foreground: var(--muted-foreground); --color-accent: var(--accent); --color-accent-foreground: var(--accent-foreground); --color-destructive: var(--destructive); --color-input: var(--input); --color-border: var(--border); --color-ring: var(--ring); --color-sidebar: var(--sidebar); --color-sidebar-foreground: var(--sidebar-foreground); --color-sidebar-primary: var(--sidebar-primary); --color-sidebar-primary-foreground: var(--sidebar-primary-foreground); --color-sidebar-accent: var(--sidebar-accent); --color-sidebar-accent-foreground: var(--sidebar-accent-foreground); --color-sidebar-border: var(--sidebar-border); --color-sidebar-ring: var(--sidebar-ring); }
-:root { --background: var(--semantic-color-background-default); --foreground: var(--semantic-color-text-primary); --card: var(--semantic-color-background-surface); --card-foreground: var(--semantic-color-text-primary); --popover: var(--semantic-color-background-surface); --popover-foreground: var(--semantic-color-text-primary); --primary: var(--semantic-color-action-primary); --primary-foreground: var(--semantic-color-text-inverse); --secondary: var(--semantic-color-background-muted); --secondary-foreground: var(--semantic-color-text-primary); --muted: var(--semantic-color-background-muted); --muted-foreground: var(--semantic-color-text-secondary); --accent: var(--semantic-color-background-muted); --accent-foreground: var(--semantic-color-text-primary); --destructive: var(--semantic-color-action-danger); --input: var(--semantic-color-border-default); --border: var(--semantic-color-border-default); --ring: var(--semantic-color-focus); --sidebar: var(--semantic-color-background-surface); --sidebar-foreground: var(--semantic-color-text-primary); --sidebar-primary: var(--semantic-color-action-primary); --sidebar-primary-foreground: var(--semantic-color-text-inverse); --sidebar-accent: var(--semantic-color-background-muted); --sidebar-accent-foreground: var(--semantic-color-text-primary); --sidebar-border: var(--semantic-color-border-default); --sidebar-ring: var(--semantic-color-focus); }
+
+/* Map Tailwind dark: utilities to data-theme (not .dark class) */
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *, [data-theme=hc-dark], [data-theme=hc-dark] *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-ring: var(--ring);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --font-sans: var(--font-family-sans);
+  --font-mono: var(--font-family-mono);
+  --font-display: var(--font-family-display);
+}
+
+/* Semantic → component bridge (inherits theme overrides via semantic vars) */
+:root,
+[data-theme="light"],
+[data-theme="dark"],
+[data-theme="hc-light"],
+[data-theme="hc-dark"] {
+  --background: var(--semantic-color-background-default);
+  --foreground: var(--semantic-color-text-primary);
+  --card: var(--semantic-color-background-surface);
+  --card-foreground: var(--semantic-color-text-primary);
+  --popover: var(--semantic-color-background-surface);
+  --popover-foreground: var(--semantic-color-text-primary);
+  --primary: var(--semantic-color-action-primary);
+  --primary-foreground: var(--semantic-color-action-primary-foreground);
+  --secondary: var(--semantic-color-action-secondary);
+  --secondary-foreground: var(--semantic-color-action-secondary-foreground);
+  --muted: var(--semantic-color-background-muted);
+  --muted-foreground: var(--semantic-color-text-muted);
+  --accent: var(--semantic-color-background-subtle);
+  --accent-foreground: var(--semantic-color-text-primary);
+  --destructive: var(--semantic-color-action-danger);
+  --destructive-foreground: var(--semantic-color-action-danger-foreground);
+  --input: var(--semantic-color-border-default);
+  --border: var(--semantic-color-border-default);
+  --ring: var(--semantic-color-border-focus);
+  --sidebar: var(--semantic-color-background-surface);
+  --sidebar-foreground: var(--semantic-color-text-primary);
+  --sidebar-primary: var(--semantic-color-action-primary);
+  --sidebar-primary-foreground: var(--semantic-color-action-primary-foreground);
+  --sidebar-accent: var(--semantic-color-background-muted);
+  --sidebar-accent-foreground: var(--semantic-color-text-primary);
+  --sidebar-border: var(--semantic-color-border-default);
+  --sidebar-ring: var(--semantic-color-border-focus);
+  color-scheme: light;
+}
+
+[data-theme="dark"],
+[data-theme="hc-dark"] {
+  color-scheme: dark;
+}
 * { box-sizing: border-box; } .ent-sr-only { position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0,0,0,0); }
 .ent-button { align-items:center; border:1px solid transparent; border-radius:var(--radius-md); cursor:pointer; display:inline-flex; font:600 var(--font-size-sm)/1 var(--font-family); gap:var(--spacing-2); justify-content:center; min-height:2.5rem; padding:0 var(--spacing-4); transition:background .15s, color .15s, border-color .15s; } .ent-button:focus-visible,.ent-input:focus-visible,button:focus-visible,summary:focus-visible { outline:3px solid color-mix(in srgb,var(--semantic-color-focus) 35%, transparent); outline-offset:2px; } .ent-button:disabled { cursor:not-allowed; opacity:.55; } .ent-button--primary { background:var(--semantic-color-action-primary); color:var(--semantic-color-text-inverse); } .ent-button--primary:hover:not(:disabled) { background:var(--semantic-color-action-primary-hover); } .ent-button--secondary { background:var(--semantic-color-background-surface); border-color:var(--semantic-color-border-default); color:var(--semantic-color-text-primary); } .ent-button--tertiary,.ent-button--ghost { background:transparent; color:var(--semantic-color-action-primary); } .ent-button--danger { background:var(--semantic-color-action-danger); color:var(--semantic-color-text-inverse); } .ent-button--sm { min-height:2rem; padding:0 var(--spacing-3); } .ent-button--lg { min-height:3rem; padding:0 var(--spacing-5); } .ent-full { width:100%; } .ent-icon-button { aspect-ratio:1; padding:0; width:2.5rem; }
 .ent-input { background:var(--semantic-color-background-surface); border:1px solid var(--semantic-color-border-default); border-radius:var(--radius-md); color:var(--semantic-color-text-primary); font:inherit; min-height:2.5rem; padding:var(--spacing-2) var(--spacing-3); width:100%; } .ent-textarea { min-height:6rem; resize:vertical; } .ent-input.ent-error { border-color:var(--semantic-color-action-danger); } .ent-field { display:grid; gap:var(--spacing-2); } .ent-field label { color:var(--semantic-color-text-primary); font-size:var(--font-size-sm); font-weight:600; } .ent-field small { color:var(--semantic-color-text-secondary); } .ent-error-text { color:var(--semantic-color-text-danger)!important; } .ent-check,.ent-switch { align-items:center; display:inline-flex; gap:var(--spacing-2); } .ent-check input { accent-color:var(--semantic-color-action-primary); height:1rem; width:1rem; } .ent-switch input { opacity:0; position:absolute; } .ent-switch > span { background:var(--semantic-color-border-strong); border-radius:var(--radius-full); height:1.25rem; position:relative; width:2.25rem; } .ent-switch > span:after { background:white; border-radius:50%; content:""; height:.9rem; left:.18rem; position:absolute; top:.18rem; transition:transform .15s; width:.9rem; } .ent-switch input:checked + span { background:var(--semantic-color-action-primary); } .ent-switch input:checked + span:after { transform:translateX(1rem); } .ent-switch em { font-style:normal; }
